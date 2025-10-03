@@ -6,49 +6,49 @@
 
 @layer base {
   :root {
-    /* SSHNETPLAY Brand Colors - All Blue Theme */
-    --background: 220 26% 6%;
-    --foreground: 210 40% 98%;
+    /* Purple Theme Colors - #42038f Base */
+    --background: 260 30% 6%;
+    --foreground: 270 20% 98%;
 
-    --card: 220 20% 8%;
-    --card-foreground: 210 40% 95%;
+    --card: 260 25% 8%;
+    --card-foreground: 270 20% 95%;
 
-    --popover: 220 20% 8%;
-    --popover-foreground: 210 40% 95%;
+    --popover: 260 25% 8%;
+    --popover-foreground: 270 20% 95%;
 
-    --primary: 210 100% 50%; /* SSHNETPLAY Blue */
+    --primary: 267 96% 29%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 15% 12%;
-    --secondary-foreground: 210 40% 95%;
+    --secondary: 260 20% 12%;
+    --secondary-foreground: 270 20% 95%;
 
-    --muted: 220 15% 15%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 260 20% 15%;
+    --muted-foreground: 265 15% 65%;
 
-    --accent: 210 100% 60%; /* Lighter Blue */
+    --accent: 267 96% 45%;
     --accent-foreground: 0 0% 100%;
 
-    --premium: 210 100% 55%; /* Blue */
+    --premium: 267 96% 60%;
     --premium-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 270 20% 98%;
 
-    --border: 220 13% 18%;
-    --input: 220 13% 18%;
-    --ring: 210 100% 50%;
+    --border: 260 15% 18%;
+    --input: 260 15% 18%;
+    --ring: 267 96% 29%;
 
     --radius: 0.75rem;
 
-    /* Gradients - All Blue */
-    --gradient-hero: linear-gradient(135deg, hsl(210 100% 40%) 0%, hsl(210 100% 50%) 50%, hsl(210 100% 60%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(220 20% 8%) 0%, hsl(220 15% 12%) 100%);
-    --gradient-premium: linear-gradient(135deg, hsl(210 100% 45%) 0%, hsl(210 100% 55%) 100%);
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(267 96% 29%) 0%, hsl(267 96% 45%) 50%, hsl(267 96% 60%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(260 25% 8%) 0%, hsl(260 20% 12%) 100%);
+    --gradient-premium: linear-gradient(135deg, hsl(267 96% 29%) 0%, hsl(267 96% 60%) 100%);
     
-    /* Shadows - Blue Only */
-    --shadow-elegant: 0 20px 25px -5px hsl(220 26% 6% / 0.4), 0 10px 10px -5px hsl(220 26% 6% / 0.1);
-    --shadow-glow: 0 0 40px hsl(210 100% 50% / 0.4);
-    --shadow-premium: 0 0 30px hsl(210 100% 50% / 0.5);
+    /* Shadows */
+    --shadow-elegant: 0 20px 25px -5px hsl(260 30% 6% / 0.4), 0 10px 10px -5px hsl(260 30% 6% / 0.1);
+    --shadow-glow: 0 0 40px hsl(267 96% 29% / 0.4);
+    --shadow-premium: 0 0 30px hsl(267 96% 60% / 0.4);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -116,12 +116,7 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
-    font-feature-settings: "cv11", "ss01";
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold tracking-tight;
+    @apply bg-background text-foreground;
   }
 }
 
@@ -133,7 +128,6 @@
   
   .gradient-card {
     background: var(--gradient-card);
-    backdrop-filter: blur(10px);
   }
   
   .gradient-premium {
@@ -165,32 +159,5 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  
-  /* Glass effect */
-  .glass {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  /* Animated gradient background */
-  .animate-gradient {
-    background-size: 200% 200%;
-    animation: gradient 8s ease infinite;
-  }
-  
-  @keyframes gradient {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-  }
-  
-  /* Hover lift effect */
-  .hover-lift {
-    @apply transition-all duration-300;
-  }
-  
-  .hover-lift:hover {
-    @apply -translate-y-1 shadow-elegant;
   }
 }
