@@ -41,15 +41,20 @@ export const Header = () => {
             <Button variant="ghost" size="sm">
               <User className="w-4 h-4 mr-2" />
               Entrar
-            </Button><Button asChild variant="hero" size="sm">
-              <a href="https://wa.me/5521988236325" target="_blank" rel="noopener noreferrer"><Phone className="w-4 h-4 mr-2" /> Assinar Agora</a></Button>
-
+            </Button>
+            <Button asChild variant="hero" size="sm">
+              <a href="https://wa.me/5551935052237" target="_blank" rel="noopener noreferrer">
+                <Phone className="w-4 h-4 mr-2" />
+                Assinar Agora
+              </a>
+            </Button>
           </div>
           
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden"
+            className="md:hidden text-foreground p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Menu"
           >
             <Menu className="w-6 h-6" />
           </button>
@@ -57,27 +62,31 @@ export const Header = () => {
         
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
+          <div className="md:hidden py-4 border-t border-border bg-background">
             <nav className="flex flex-col space-y-4">
-              <Link to="/canais" className="text-foreground hover:text-primary transition-smooth">
+              <Link to="/canais" className="text-foreground/90 hover:text-primary transition-smooth font-medium">
                 Canais
               </Link>
-              <Link to="/catalogo" className="text-foreground hover:text-primary transition-smooth">
+              <Link to="/catalogo" className="text-foreground/90 hover:text-primary transition-smooth font-medium">
                 Filmes & Séries
               </Link>
-              <a href="#planos" className="text-foreground hover:text-primary transition-smooth">
+              <a href="#planos" className="text-foreground/90 hover:text-primary transition-smooth font-medium">
                 Planos
               </a>
-              <a href="#suporte" className="text-foreground hover:text-primary transition-smooth">
+              <a href="#suporte" className="text-foreground/90 hover:text-primary transition-smooth font-medium">
                 Revenda
               </a>
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="ghost" size="sm">
+                <Button variant="outline" size="sm" className="justify-start">
                   <User className="w-4 h-4 mr-2" />
                   Entrar
-                </Button><Button asChild variant="hero" size="sm"><a href="https://wa.me/5521988236325" target="_blank" rel="noopener noreferrer">
-                  <Phone className="w-4 h-4 mr-2" />Assinar Agora</a></Button>
-
+                </Button>
+                <Button asChild variant="hero" size="sm" className="justify-start">
+                  <a href="https://wa.me/5551935052237" target="_blank" rel="noopener noreferrer">
+                    <Phone className="w-4 h-4 mr-2" />
+                    Assinar Agora
+                  </a>
+                </Button>
               </div>
             </nav>
           </div>
