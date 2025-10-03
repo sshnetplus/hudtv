@@ -241,7 +241,7 @@ export const ResellerSection = () => {
               <p className="text-muted-foreground mb-6 max-w-md">
                 Torne-se um revendedor oficial e aproveite os melhores preços do mercado
               </p>
-             <Button asChild size="lg" className="text-lg px-8 shadow-lg group"><a href="https://wa.me/5551935052237?text=Ol%C3%A1,%20tenho%20interesse%20em%20ser%20revendedor!" target="_blank"  rel="noopener noreferrer">
+             <Button asChild size="lg" className="text-lg px-8 shadow-lg group"><a href="https://wa.me/5521988236325?text=Ol%C3%A1,%20tenho%20interesse%20em%20ser%20revendedor!" target="_blank"  rel="noopener noreferrer">
     <Users className="w-5 h-5 mr-2" />
     Quero ser Revendedor
     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-smooth" />
