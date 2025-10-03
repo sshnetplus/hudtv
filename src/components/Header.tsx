@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, User, Phone, X } from "lucide-react"; // removi o Tv pois não vai mais usar
+import { Menu, User, Phone, X } from "lucide-react"; 
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -9,49 +9,50 @@ export const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24"> {/* altura aumentada */}
+          
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group transition-smooth">
+          <Link to="/" className="flex items-center gap-4 group transition-smooth">
             <div className="relative">
-              <div className="absolute inset-0 gradient-hero blur-xl opacity-50 group-hover:opacity-75 transition-smooth"></div>
+              <div className="absolute inset-0 gradient-hero blur-2xl opacity-50 group-hover:opacity-75 transition-smooth"></div>
               <img 
-                src="/logo.png"   // <<-- coloque sua logo na pasta "public" com esse nome
+                src="/logo.png"   // coloque sua logo em public/logo.png
                 alt="Logo HUB TV" 
-                className="w-12 h-12 object-contain relative z-10 group-hover:scale-110 transition-spring"
+                className="w-16 h-16 md:w-20 md:h-20 object-contain relative z-10 group-hover:scale-110 transition-spring"
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-gradient tracking-tight">HUB TV</span>
-              <span className="text-[10px] text-muted-foreground uppercase tracking-widest">Streaming Premium</span>
+              <span className="text-2xl font-extrabold text-gradient tracking-tight">HUB TV</span>
+              <span className="text-[11px] text-muted-foreground uppercase tracking-widest">Streaming Premium</span>
             </div>
           </Link>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-2">
+          <nav className="hidden md:flex items-center space-x-3">
             <Link 
               to="/canais" 
-              className="relative px-4 py-2.5 rounded-xl text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 transition-smooth group"
+              className="relative px-5 py-3 rounded-xl text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 transition-smooth group"
             >
               <span className="relative z-10">Canais</span>
               <div className="absolute inset-0 rounded-xl bg-gradient-hero opacity-0 group-hover:opacity-10 transition-smooth"></div>
             </Link>
             <Link 
               to="/catalogo" 
-              className="relative px-4 py-2.5 rounded-xl text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 transition-smooth group"
+              className="relative px-5 py-3 rounded-xl text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 transition-smooth group"
             >
               <span className="relative z-10">Filmes & Séries</span>
               <div className="absolute inset-0 rounded-xl bg-gradient-hero opacity-0 group-hover:opacity-10 transition-smooth"></div>
             </Link>
             <a 
               href="#planos" 
-              className="relative px-4 py-2.5 rounded-xl text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 transition-smooth group"
+              className="relative px-5 py-3 rounded-xl text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 transition-smooth group"
             >
               <span className="relative z-10">Planos</span>
               <div className="absolute inset-0 rounded-xl bg-gradient-hero opacity-0 group-hover:opacity-10 transition-smooth"></div>
             </a>
             <a 
               href="#suporte" 
-              className="relative px-4 py-2.5 rounded-xl text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 transition-smooth group"
+              className="relative px-5 py-3 rounded-xl text-sm font-medium text-foreground/80 hover:text-primary hover:bg-primary/10 transition-smooth group"
             >
               <span className="relative z-10">Revenda</span>
               <div className="absolute inset-0 rounded-xl bg-gradient-hero opacity-0 group-hover:opacity-10 transition-smooth"></div>
