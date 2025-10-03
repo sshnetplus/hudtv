@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, Tv, User, Phone, X } from "lucide-react";
+import { Menu, User, Phone, X } from "lucide-react"; // removi o Tv pois não vai mais usar
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -14,10 +14,14 @@ export const Header = () => {
           <Link to="/" className="flex items-center gap-3 group transition-smooth">
             <div className="relative">
               <div className="absolute inset-0 gradient-hero blur-xl opacity-50 group-hover:opacity-75 transition-smooth"></div>
-              <Tv className="w-9 h-9 text-primary relative z-10 group-hover:scale-110 transition-spring" />
+              <img 
+                src="/logo.png"   // <<-- coloque sua logo na pasta "public" com esse nome
+                alt="Logo HUB TV" 
+                className="w-12 h-12 object-contain relative z-10 group-hover:scale-110 transition-spring"
+              />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-gradient tracking-tight">HUBTV</span>
+              <span className="text-xl font-bold text-gradient tracking-tight">HUB TV</span>
               <span className="text-[10px] text-muted-foreground uppercase tracking-widest">Streaming Premium</span>
             </div>
           </Link>
