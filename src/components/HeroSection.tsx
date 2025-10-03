@@ -32,7 +32,7 @@ Acesse milhares de canais de TV, filmes e séries em qualidade HD/4K. Suporte 24
           
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
 <Button asChild variant="hero" size="lg" className="text-lg px-10 py-6 shadow-glow hover-lift"><a 
-    href="https://wa.me/5551935052237?text=Ol%C3%A1,%20quero%20come%C3%A7ar%20agora!" 
+    href="https://wa.me/5521988236325?text=Ol%C3%A1,%20quero%20come%C3%A7ar%20agora!" 
     target="_blank" 
     rel="noopener noreferrer">
     <Play className="w-6 h-6 mr-2" />
