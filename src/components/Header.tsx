@@ -42,7 +42,7 @@ export const Header = () => {
               <User className="w-4 h-4 mr-2" />
               Entrar
             </Button><Button asChild variant="hero" size="sm">
-              <a href="https://wa.me/5551935052237" target="_blank" rel="noopener noreferrer"><Phone className="w-4 h-4 mr-2" /> Assinar Agora</a></Button>
+              <a href="https://wa.me/5521988236325" target="_blank" rel="noopener noreferrer"><Phone className="w-4 h-4 mr-2" /> Assinar Agora</a></Button>
 
           </div>
           
@@ -75,7 +75,7 @@ export const Header = () => {
                 <Button variant="ghost" size="sm">
                   <User className="w-4 h-4 mr-2" />
                   Entrar
-                </Button><Button asChild variant="hero" size="sm"><a href="https://wa.me/5551935052237" target="_blank" rel="noopener noreferrer">
+                </Button><Button asChild variant="hero" size="sm"><a href="https://wa.me/5521988236325" target="_blank" rel="noopener noreferrer">
                   <Phone className="w-4 h-4 mr-2" />Assinar Agora</a></Button>
 
               </div>
