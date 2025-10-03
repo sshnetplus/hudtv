@@ -107,7 +107,7 @@ export const PricingSection = () => {
                 
 <Button asChild variant={plan.variant} className="w-full" size="lg">
   <a 
-    href="https://wa.me/5551935052237?text=Ol%C3%A1,%20quero%20come%C3%A7ar%20meu%20teste%20gr%C3%A1tis!" 
+    href="https://wa.me/5521988236325?text=Ol%C3%A1,%20quero%20come%C3%A7ar%20meu%20teste%20gr%C3%A1tis!" 
     target="_blank" 
     rel="noopener noreferrer">
     {plan.name === "Premium" && <Zap className="w-4 h-4 mr-2" />}
@@ -130,7 +130,7 @@ export const PricingSection = () => {
           </p>
 <Button asChild variant="outline" size="lg">
   <a 
-    href="https://wa.me/5551935052237?text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20vendedor." 
+    href="https://wa.me/5521988236325?text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20um%20vendedor." 
     target="_blank" 
     rel="noopener noreferrer"
   >
