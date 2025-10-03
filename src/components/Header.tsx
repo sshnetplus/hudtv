@@ -17,7 +17,7 @@ export const Header = () => {
               <Tv className="w-9 h-9 text-primary relative z-10 group-hover:scale-110 transition-spring" />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-gradient tracking-tight">SSHNETPLAY</span>
+              <span className="text-xl font-bold text-gradient tracking-tight">HUBTV</span>
               <span className="text-[10px] text-muted-foreground uppercase tracking-widest">Streaming Premium</span>
             </div>
           </Link>
