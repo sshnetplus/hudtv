@@ -13,7 +13,7 @@ export const Footer = () => {
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                 <Tv className="w-6 h-6 text-white" />
               </div>
-              <span className="text-2xl font-bold tracking-tight">SSHNET<span className="text-gradient">PLAY</span></span>
+              <span className="text-2xl font-bold tracking-tight">HUB<span className="text-gradient">TV</span></span>
             </div>
             <p className="text-muted-foreground">
               A melhor plataforma de streaming do Brasil. Mais de 5.000 filmes, séries e 2.000+ canais de TV.
@@ -55,7 +55,7 @@ export const Footer = () => {
               <li><Link to="/" className="text-muted-foreground hover:text-primary transition-smooth">Como Assinar</Link></li>
               <li><Link to="/" className="text-muted-foreground hover:text-primary transition-smooth">Termos de Uso</Link></li>
               <li><Link to="/" className="text-muted-foreground hover:text-primary transition-smooth">Política de Privacidade</Link></li>
-              <li><a  href="https://wa.me/5551935052237" target="_blank" rel="noopener noreferrer"className="text-muted-foreground hover:text-primary transition-smooth">Contato</a></li>
+              <li><a  href="https://wa.me/5521988236325" target="_blank" rel="noopener noreferrer"className="text-muted-foreground hover:text-primary transition-smooth">Contato</a></li>
 
             </ul>
           </div>
@@ -71,7 +71,7 @@ export const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-primary mr-3" />
-                <span className="text-muted-foreground">sshnetplus@gmail.com</span>
+                <span className="text-muted-foreground">Ceohubtv@gmail.com</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="w-5 h-5 text-primary mr-3" />
@@ -80,7 +80,7 @@ export const Footer = () => {
             </div>
            <div className="mt-6">
   <a 
-    href="https://wa.me/5551935052237" 
+    href="https://wa.me/5521988236325" 
     target="_blank" 
     rel="noopener noreferrer"
   >
@@ -95,7 +95,7 @@ export const Footer = () => {
         
         <div className="border-t border-border mt-12 pt-8 text-center">
           <p className="text-muted-foreground">
-            © 2025 SSHNETPLAY. Todos os direitos reservados.
+            © 2025 HUBTV. Todos os direitos reservados.
           </p>
         </div>
       </div>
